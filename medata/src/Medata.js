@@ -8,10 +8,13 @@ export default class Medata extends Component {
             medata:"not yet gotten"
         };
     }
-    componentDidMount = () =>{
+    handleButtonClick = () =>{
         axios.get("/api").then(response => {
            // console.log(response.data.body);
-           console.log(response);
+          // console.log(response);
+          this.setState({
+            medata:response.data.body
+          });
         });
 
     };
@@ -19,7 +22,7 @@ export default class Medata extends Component {
     render() {
         return (
             <div>
-                <button>Techos presupuestales presupuesto participativo</button>
+                <button onClick = {this.handleButtonClick}>Techos presupuestales presupuesto participativo</button>
                 <h1>MEDATA:{this.state.medata}</h1>
             </div>
         )
