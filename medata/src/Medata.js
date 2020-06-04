@@ -28,3 +28,7 @@ export default class Medata extends Component {
         )
     }
 }
+//<div>
+ //               <button onClick = {this.handleButtonClick}>Techos //presupuestales presupuesto participativo</button>
+ //               <h1>MEDATA:{this.state.medata}</h1>
+   //         </div>
