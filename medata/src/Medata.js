@@ -5,7 +5,7 @@ export default class Medata extends Component {
     constructor(){
         super();
         this.state ={
-            medata:"not yet gotten"
+            medata:"Presupuesto destinado para la respectiva comuna o corregimiento en Presupuesto Participativo"
         };
     }
     handleButtonClick = () =>{
@@ -22,7 +22,7 @@ export default class Medata extends Component {
     render() {
         return (
             <div>
-                <button onClick = {this.handleButtonClick}>Techos presupuestales presupuesto participativo</button>
+               <button onClick = {this.handleButtonClick} type="button" class="btn btn-success">Techos presupuestales presupuesto participativo</button>
                 <h1>MEDATA:{this.state.medata}</h1>
             </div>
         )
